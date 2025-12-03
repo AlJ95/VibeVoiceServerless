@@ -9,8 +9,8 @@ import runpod
 from vibevoice.inference import load_model, tts_generate  # must exist
 
 # --- Env ---
-MODEL_NAME = os.getenv("MODEL_NAME", "microsoft/VibeVoice-1.5B")
-DEFAULT_LANGUAGE = os.getenv("LANGUAGE", "en")
+MODEL_NAME = os.getenv("MODEL_NAME", "vibevoice/VibeVoice-7B")
+DEFAULT_LANGUAGE = os.getenv("LANGUAGE", "de")
 HF_TOKEN = os.getenv("HF_TOKEN", None)
 
 # --- Device ---
@@ -40,7 +40,7 @@ def synthesize_speech(text: str, language: str) -> str:
 
 def handler(job):
     """
-    Expects: { "input": { "text": str, "language": "en"|"zh" (optional) } }
+    Expects: { "input": { "text": str, "language": "en"|"zh"|"de" (optional) } }
     Returns: { "language": str, "audio_base64": str }
     """
     job_input = job.get("input", {})
