@@ -11,14 +11,14 @@
       {
         "name": "English Default",
         "defaults": {
-          "MODEL_NAME": "microsoft/VibeVoice-1.5B",
+          "MODEL_NAME": "microsoft/VibeVoice-7B",
           "LANGUAGE": "en"
         }
       },
       {
         "name": "Chinese Default",
         "defaults": {
-          "MODEL_NAME": "microsoft/VibeVoice-1.5B",
+          "MODEL_NAME": "microsoft/VibeVoice-7B",
           "LANGUAGE": "zh"
         }
       }
