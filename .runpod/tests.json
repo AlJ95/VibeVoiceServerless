@@ -23,7 +23,7 @@
     "env": [
       {
         "key": "MODEL_NAME",
-        "value": "microsoft/VibeVoice-1.5B"
+        "value": "microsoft/VibeVoice-7B"
       },
       {
         "key": "LANGUAGE",
