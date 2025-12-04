@@ -10,7 +10,7 @@ from vibevoice.modular.modeling_vibevoice_inference import VibeVoiceForCondition
 from vibevoice.processor.vibevoice_processor import VibeVoiceProcessor
 
 # --- Env ---
-MODEL_NAME = os.getenv("MODEL_NAME", "microsoft/VibeVoice-1.5b")
+MODEL_NAME = os.getenv("MODEL_NAME", "vibevoice/VibeVoice-7B")
 DEFAULT_LANGUAGE = os.getenv("LANGUAGE", "en")
 HF_TOKEN = os.getenv("HF_TOKEN", None)
 
@@ -57,7 +57,7 @@ def load_model(model_name, hf_token=None, device="cuda"):
 model, processor = load_model(model_name=MODEL_NAME, hf_token=HF_TOKEN, device=device)
 
 # Default voice path (local copy)
-DEFAULT_VOICE_PATH = "demo/voices/en-Carter_man.wav"
+DEFAULT_VOICE_PATH = "demo/voices/de-jan_man.wav"
 
 def synthesize_speech(text: str, language: str) -> str:
     """
