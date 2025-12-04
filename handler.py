@@ -15,7 +15,7 @@ DEFAULT_LANGUAGE = os.getenv("LANGUAGE", "en")
 HF_TOKEN = os.getenv("HF_TOKEN", None)
 
 # --- Device ---
-device = "cpu" # "cuda" if torch.cuda.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # --- Load once at startup ---
 print(f"[VibeVoice] Loading model '{MODEL_NAME}' on {device}...")
