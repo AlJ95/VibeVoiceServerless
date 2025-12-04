@@ -13,10 +13,6 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-# Install VibeVoice from git
-RUN git clone https://github.com/vibevoice-community/VibeVoice.git /app/VibeVoice \
-    && cd /app/VibeVoice \
-    && pip3 install --no-cache-dir .
 
 # Copy source & handler
 COPY . .
