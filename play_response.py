@@ -32,7 +32,7 @@ def play_audio(file_path):
     return False
 
 def main():
-    json_file = "response.json"
+    json_file = "runpod_response.json"
     
     if not os.path.exists(json_file):
         print(f"Error: {json_file} not found.")
